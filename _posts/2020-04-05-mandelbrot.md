@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "Rendering the Mandelbrot set using OpenCL"
+title:      Rendering the Mandelbrot set using OpenCL
 date:       2020-04-12
-summary:    A small weekend project to buld a colorful Mandelbrot set rendered using OpenCL. <img src="/images/mandelbrot.png" class="summary-image">
+summary:    A small weekend project to buld a colorful Mandelbrot set rendered using OpenCL. <img src='/images/mandelbrot.png' class='summary-image'>
 categories: random
 ---
 
