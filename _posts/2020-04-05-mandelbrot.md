@@ -2,7 +2,7 @@
 layout:     post
 title:      "Rendering the Mandelbrot set using OpenCL"
 date:       2020-04-12
-summary:    ""
+summary:    "A small weekend projcect to buld a colorful Mandelbrot set rendered using OpenCL."
 categories: random
 ---
 
