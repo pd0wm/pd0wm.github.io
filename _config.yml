@@ -1,14 +1,13 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Willem's Blog
+email:       willem.melching@gmail.com
+author:      Willem Melching
+description: ""
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "https://blog.willemmelching.nl"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
- - contact.html
 
 # Google services
 google_verification:
@@ -81,33 +80,10 @@ text:
   pagination:
     newer: 'Newer'
     older: 'Older'
-  share_buttons:
-    text:         'Share this post!'
-    facebook:     'Share on Facebook'
-    twitter:      'Share on Twitter'
-    googleplus:   'Share on Google+'
-    linkedin:     'Share on LinkedIn'
-    digg:         'Share on Digg'
-    tumblr:       'Share on Tumblr'
-    reddit:       'Share on Reddit'
-    stumbleupon:  'Share on StumbleUpon'
-    hackernews:   'Share on Hacker News'
   post:
     updated:        'Updated'
     minute_read:    'minute read'
     related_posts:  'Related Posts'
-  index:
-    coming_soon: 'Coming soon...'
-  contact:
-    email:    'Email Address'
-    content:  'What would you like to say?'
-    subject:  'New submission!'
-    submit:   'Say Hello'
-    ajax:
-      sending:  'sending..'
-      sent:     'Message sent!'
-      error:    'Error!'
-  thanks: 'Thanks for contacting us. We will reply as soon as possible.'
   og_locale: 'en_US'
 
 # Build settings
@@ -127,5 +103,4 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - README.md
-  - screenshot.png
   - vendor
