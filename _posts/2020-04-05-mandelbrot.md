@@ -6,11 +6,11 @@ summary:    A small weekend project to buld a colorful Mandelbrot set rendered u
 categories: random
 ---
 
-This weekend I decided to play around with OpenCL, something I had never used before. As an example project I built a Mandelbrot set renderer. This seemed fitting, since in high school I wrote an extremely slow version in TI Basic on a TI84 graphic calculator. Rendering a single image took about 45 minutes.
+This weekend I decided to play around with OpenCL, something I had never used before. As first project I built a Mandelbrot set renderer. This seemed fitting, since in high school I wrote an extremely slow version in TI Basic on a TI84 graphic calculator. Rendering a single image took about 45 minutes.
 
-The math behind the Mandelbrot set is relatively simple. A point $$c$$ on the complex plane is included in the set if the sequence $$z_{n+1} = z_n^2 + c$$ with $$z_0 = 0$$ is bounded. For simplicity we interpet "bounded" as $$\vert z\vert < 4$$ after 256 iterations. To add some nice coloring to the points outside of the set, we can count how many iterations it takes for the sequence to go "unbounded".
+The math behind the Mandelbrot set is relatively simple. A point $$c$$ on the complex plane is included in the set if the sequence $$z_{n+1} = z_n^2 + c$$ with $$z_0 = 0$$ is bounded. For simplicity we interpret "bounded" as $$\vert z\vert < 4$$ after 256 iterations. To add some nice coloring to the points outside of the set, we can count how many iterations it takes for the sequence to go "unbounded".
 
-I translated the psuedo code from Wikipedia into the following OpenCL kernel:
+I translated the pseudo code from Wikipedia into the following OpenCL kernel:
 ```c++
 __kernel void mandelbrot(__write_only image2d_t out) {
   int2 pos = (int2)(get_global_id(0), get_global_id(1));
